@@ -1,54 +1,98 @@
-# TermS!gnal 📡
+# TermS!gnal 📡  
+*A macOS-native BBS terminal with retro soul.*
 
-> A modern macOS terminal for BBSes. Something that works very well for ANSI art, smooth door game rendering, and retro soul.
+TermS!gnal is a focused terminal app for macOS, built specifically for connecting to bulletin board systems (BBSes).
 
-## 🎯 The Problem
+Modern terminals are excellent at shells and logs, but they fall apart when it comes to classic BBS behavior: ANSI art flickers, colors break, door games misbehave, and CP437 support is inconsistent at best.
 
-Modern terminals (Terminal.app, iTerm2) fail at rendering classic BBS experiences:
-- ANSI art flickers or colors are wrong
-- Door games like *Legend of the Red Dragon* don’t work right
-- No support for CP437, proper cursor control, or BBS-specific terminal types
+This project exists to fix that.
 
-We deserve better.
+---
 
-## ✨ The Vision
+## What Problem Is This Solving?
 
-I envision TermS!gnal to be a macOS terminal app that:
-- Renders ANSI/ASCII art **perfectly** (with bundled CP437 font)
-- Runs door games smoothly (LOTR, Trade Wars, etc.)
-- Connects via SSH/Telnet with custom ports
-- Has a clean, modern UI with retro flair
-- Is easy to use, but can also use Terminal commands when needed
+Most macOS terminals were never designed for:
 
-## 🧩 Features (Planned)
-- [ ] CP437 font rendering (bundled)
-- [ ] Full ANSI/VT100/AVT1 escape sequence support
-- [ ] Configurable `TERM` variable (`ansi-bbs`, `avt1`, etc.)
-- [ ] Smooth screen updates (no flicker)
-- [ ] Keyboard mapping (F1-F12, arrow keys, etc.)
-- [ ] BBS directory with one-click connect
-- [ ] Session recording (.ans files)
+- ANSI art animations
+- Cursor-heavy screen updates
+- CP437 character sets
+- Real-time door games like *Legend of the Red Dragon*
 
-## 🤝 Want to Help?
+As a result, classic BBSes often look wrong or feel broken, even though the server side still works perfectly.
 
-I’m not a developer, but I believe in this idea.
+TermS!gnal aims to be a **BBS-first terminal**, not a general-purpose shell replacement.
 
-If you’re a macOS developer, terminal nerd, or retro computing fan **let’s build this together**.
+---
 
-Open an issue, comment, or DM me. All contributions welcome.
+## The Goal
 
+Create a **macOS-native terminal app** that:
 
-## 📣 Shout-Outs
+- Renders ANSI and ASCII art cleanly and accurately  
+- Handles classic BBS screen behavior without flicker  
+- Plays door games smoothly and correctly  
+- Feels modern, but respects the retro experience  
 
-This project was born from late-night BBS sessions, and a few special systems that still make the terminal glow feel magical.
+If LORD looks right and plays right, we’re doing it right.
 
-These aren’t the only great BBSes out there... but they’re the ones I keep coming back to:
+---
 
-- **[TW Lounge](telnet://twlounge.ddns.net:7777)**
-- **[Constructive Chaos](https://conchaos.synchro.net)**
-- **[Last Rangers’](telnet://lastrangersbbs.com:8888)**
-- **[xibalba.l33t.codes](ssh://xibalba.l33t.codes:44511)**
-  
-If you’re on a BBS in 2026, you’re not just nostalgic – you’re keeping a world alive.
+## Planned Features (Early Scope)
+
+- Bundled CP437 font with correct glyph mapping  
+- Accurate ANSI / VT100-style escape handling  
+- Smooth, cell-based screen updates  
+- Proper cursor control and positioning  
+- Configurable `TERM` values for BBS compatibility  
+- Keyboard mapping suitable for door games  
+- Telnet and SSH connections (custom ports supported)  
+
+This is intentionally a **small, focused feature set**.
+
+---
+
+## Non-Goals
+
+To keep the project realistic, TermS!gnal is **not** trying to be:
+
+- A full replacement for Terminal.app or iTerm2  
+- A web-based terminal  
+- A multi-platform solution (macOS first)  
+- A perfect emulator for every terminal ever made  
+
+The goal is “excellent for BBSes,” not “everything for everyone.”
+
+---
+
+## Who This Is For
+
+- BBS users on macOS  
+- Retro computing enthusiasts  
+- Terminal nerds who care about rendering details  
+- Developers interested in terminal emulation or text rendering  
+
+---
+
+## About the Project
+
+I’m not a developer. I’m a long-time BBS user with a strong idea of how this *should* feel when it’s right.
+
+This project is a collaboration invitation, not a finished product.  
+If you’re interested in helping shape or build it, I’d love to talk.
+
+Issues, suggestions, and discussions are all welcome.
+
+---
+
+## BBSes That Inspired This Project
+
+These systems remind me why terminals still matter:
+
+- **TW Lounge** – telnet://twlounge.ddns.net:7777  
+- **Constructive Chaos** – https://conchaos.synchro.net  
+- **Last Rangers’** – telnet://lastrangersbbs.com:8888  
+- **xibalba.l33t.codes** – ssh://xibalba.l33t.codes:44511  
+
+If you’re on a BBS in 2026, you’re keeping something alive.
 
 Keep typ!ng.
